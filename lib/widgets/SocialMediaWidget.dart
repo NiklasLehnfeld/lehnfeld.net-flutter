@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:js' as js;
+import '../HoverExtension.dart';
 
 class SocialMediaWidget extends StatelessWidget {
 
@@ -33,7 +34,7 @@ class SocialMediaWidget extends StatelessWidget {
                   width: 100,
                   height: 100,
                 ),
-              ),
+              ).showCursorOnHover,
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://github.com/NiklasLehnfeld"),
@@ -42,7 +43,7 @@ class SocialMediaWidget extends StatelessWidget {
                   width: 100,
                   height: 100,
                 ),
-              ),
+              ).showCursorOnHover,
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://www.linkedin.com/in/lehnfeld/"),
@@ -51,7 +52,7 @@ class SocialMediaWidget extends StatelessWidget {
                   width: 100,
                   height: 100,
                 ),
-              ),
+              ).showCursorOnHover,
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://twitter.com/NLehnfeld"),
@@ -60,7 +61,7 @@ class SocialMediaWidget extends StatelessWidget {
                   width: 100,
                   height: 100,
                 ),
-              ),
+              ).showCursorOnHover,
             ],
           ),
         ),
