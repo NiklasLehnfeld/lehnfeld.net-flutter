@@ -23,14 +23,11 @@ class MyApp extends StatelessWidget {
               flex: 1,
             ),
             Expanded(
-              flex: 10,
-              child: SingleChildScrollView(
-                child: HomeWidget(),
-              )
-            )
+                flex: 10,
+                child: SingleChildScrollView(
+                  child: HomeWidget(),
+                ))
           ],
         )));
   }
 }
-
-
