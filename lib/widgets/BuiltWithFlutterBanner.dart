@@ -16,14 +16,15 @@ class BuiltWithFlutterBanner extends StatelessWidget {
               child: Card(
                 elevation: 10,
                 child: Container(
-                    width: 180,
+                    width: 200,
                     color: Colors.blue,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        SizedBox(width: 20,),
                         Text(
-                          "   Built with",
+                          "Built with",
                           style: TextStyle(fontSize: 15, color: Colors.white),
                         ),
                         Padding(
