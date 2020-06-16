@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lehnfeldnet/widgets/Highlightable.dart';
 import 'dart:js' as js;
-import '../HoverExtension.dart';
 
 class SocialMediaWidget extends StatelessWidget {
 
@@ -28,40 +28,36 @@ class SocialMediaWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () => launchURL("https://instagram.com/nik.devs"),
-                child: Image(
-                  image: AssetImage("images/instagram.png"),
-                  width: 100,
-                  height: 100,
+                onTap: () => launchURL("https://instagram.com/ni.lehnfeld"),
+                child: Highlightable(
+                  child: AssetImage("images/instagram.png"),
                 ),
-              ).showCursorOnHover,
+                hoverColor: Colors.transparent
+              ),
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://github.com/NiklasLehnfeld"),
-                child: Image(
-                  image: AssetImage("images/github.png"),
-                  width: 100,
-                  height: 100,
+                child: Highlightable(
+                  child: AssetImage("images/github.png"),
                 ),
-              ).showCursorOnHover,
+                hoverColor: Colors.transparent
+              ),
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://www.linkedin.com/in/lehnfeld/"),
-                child: Image(
-                  image: AssetImage("images/linkedin.png"),
-                  width: 100,
-                  height: 100,
+                child: Highlightable(
+                  child: AssetImage("images/linkedin.png"),
                 ),
-              ).showCursorOnHover,
+                hoverColor: Colors.transparent
+              ),
               Spacer(),
               InkWell(
                 onTap: () => launchURL("https://twitter.com/NLehnfeld"),
-                child: Image(
-                  image: AssetImage("images/twitter.png"),
-                  width: 100,
-                  height: 100,
+                child: Highlightable(
+                  child: AssetImage("images/twitter.png"),
                 ),
-              ).showCursorOnHover,
+                hoverColor: Colors.transparent
+              ),
             ],
           ),
         ),

@@ -8,11 +8,11 @@ class BuiltWithFlutterBanner extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Transform.translate(
-          offset: Offset.fromDirection(0, 35),
+          offset: Offset.fromDirection(0, 40),
           child: Transform.translate(
             offset: Offset.fromDirection(180, 0),
             child: Transform.rotate(
-              angle: math.pi / 5,
+              angle: math.pi / 4.5,
               child: Card(
                 elevation: 10,
                 child: Container(
@@ -22,7 +22,7 @@ class BuiltWithFlutterBanner extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        SizedBox(width: 20,),
+                        SizedBox(width: 40,),
                         Text(
                           "Built with",
                           style: TextStyle(fontSize: 15, color: Colors.white),

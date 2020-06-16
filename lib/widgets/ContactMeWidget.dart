@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:lehnfeldnet/widgets/Highlightable.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactMeWidget extends StatelessWidget {
   @override
@@ -17,22 +19,14 @@ class ContactMeWidget extends StatelessWidget {
         ),
         InkWell(
           onTap: () => sendEMail(),
-          child: Image(
-            image: AssetImage("images/mail.png"),
-            height: 100,
-            width: 100,
+          child: Highlightable(
+            child: AssetImage("images/mail.png"),
           ),
+          hoverColor: Colors.transparent
         )
       ],
     );
   }
 
-  void sendEMail() {
-    final Email email = Email(
-      recipients: ['niklas@lehnfeld.net'],
-      isHTML: false,
-    );
-
-    FlutterEmailSender.send(email);
-  }
+  void sendEMail() => launch("mailto:niklas@lehnfeld.net");
 }
