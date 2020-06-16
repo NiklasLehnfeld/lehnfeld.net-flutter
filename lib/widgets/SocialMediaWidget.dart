@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lehnfeldnet/utils/web_utils.dart';
 import 'package:lehnfeldnet/widgets/Highlightable.dart';
-import 'dart:js' as js;
+import 'package:lehnfeldnet/widgets/HighlightableText.dart';
+
+import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 
 class SocialMediaWidget extends StatelessWidget {
 
@@ -14,7 +17,7 @@ class SocialMediaWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        HighlightableText(
           "Follow me on",
           style: TextStyle(fontSize: 30),
         ),
@@ -28,7 +31,7 @@ class SocialMediaWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () => launchURL("https://instagram.com/ni.lehnfeld"),
+                onTap: () => WebUtils.launchUrl("https://instagram.com/ni.lehnfeld"),
                 child: Highlightable(
                   child: AssetImage("images/instagram.png"),
                 ),
@@ -36,7 +39,7 @@ class SocialMediaWidget extends StatelessWidget {
               ),
               Spacer(),
               InkWell(
-                onTap: () => launchURL("https://github.com/NiklasLehnfeld"),
+                onTap: () => WebUtils.launchUrl("https://github.com/NiklasLehnfeld"),
                 child: Highlightable(
                   child: AssetImage("images/github.png"),
                 ),
@@ -44,7 +47,7 @@ class SocialMediaWidget extends StatelessWidget {
               ),
               Spacer(),
               InkWell(
-                onTap: () => launchURL("https://www.linkedin.com/in/lehnfeld/"),
+                onTap: () => WebUtils.launchUrl("https://www.linkedin.com/in/lehnfeld/"),
                 child: Highlightable(
                   child: AssetImage("images/linkedin.png"),
                 ),
@@ -52,7 +55,7 @@ class SocialMediaWidget extends StatelessWidget {
               ),
               Spacer(),
               InkWell(
-                onTap: () => launchURL("https://twitter.com/NLehnfeld"),
+                onTap: () => WebUtils.launchUrl("https://twitter.com/NLehnfeld"),
                 child: Highlightable(
                   child: AssetImage("images/twitter.png"),
                 ),
@@ -65,6 +68,5 @@ class SocialMediaWidget extends StatelessWidget {
     );
   }
 
-  void launchURL(String url) => js.context.callMethod("open", [url]);
 }
 

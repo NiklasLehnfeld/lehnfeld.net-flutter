@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:lehnfeldnet/widgets/Highlightable.dart';
+import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactMeWidget extends StatelessWidget {
@@ -10,7 +11,7 @@ class ContactMeWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        HighlightableText(
           "or contact me",
           style: TextStyle(fontSize: 30),
         ),

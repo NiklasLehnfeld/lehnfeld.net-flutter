@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Niklas Lehnfeld',
+        title: 'Niklas Lehnfeld | Software Engineer',
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Column(
