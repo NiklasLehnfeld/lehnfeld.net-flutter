@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 import 'package:lehnfeldnet/widgets/headline.dart';
 import 'package:lehnfeldnet/widgets/progress_bar.dart';
 

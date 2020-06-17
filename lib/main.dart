@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lehnfeldnet/widgets/BuiltWithFlutterBanner.dart';
-import 'package:lehnfeldnet/widgets/HomeWidget.dart';
+import 'package:lehnfeldnet/widgets/built_with_flutter_banner.dart';
+import 'package:lehnfeldnet/widgets/home_widget.dart';
 
 void main() {
   runApp(MyApp());

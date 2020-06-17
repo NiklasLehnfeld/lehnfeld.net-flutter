@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lehnfeldnet/widgets/ContactMeWidget.dart';
-import 'package:lehnfeldnet/widgets/Highlightable.dart';
-import 'package:lehnfeldnet/widgets/SocialMediaWidget.dart';
+import 'package:lehnfeldnet/widgets/contact_me_widget.dart';
+import 'package:lehnfeldnet/widgets/hightlightable.dart';
 import 'package:lehnfeldnet/widgets/skills_widget.dart';
+import 'package:lehnfeldnet/widgets/social_media_widget.dart';
 
 class HomeWidget extends StatefulWidget {
   @override

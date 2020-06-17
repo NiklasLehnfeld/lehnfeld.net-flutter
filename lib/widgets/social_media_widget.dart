@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lehnfeldnet/utils/web_utils.dart';
-import 'package:lehnfeldnet/widgets/Highlightable.dart';
-import 'package:lehnfeldnet/widgets/HighlightableText.dart';
-
-import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 import 'package:lehnfeldnet/widgets/headline.dart';
+import 'package:lehnfeldnet/widgets/hightlightable.dart';
 
 class SocialMediaWidget extends StatelessWidget {
 

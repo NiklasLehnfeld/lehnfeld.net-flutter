@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
-import 'package:lehnfeldnet/widgets/Highlightable.dart';
-import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 import 'package:lehnfeldnet/widgets/headline.dart';
+import 'package:lehnfeldnet/widgets/hightlightable.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactMeWidget extends StatelessWidget {

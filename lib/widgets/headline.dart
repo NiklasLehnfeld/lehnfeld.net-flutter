@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lehnfeldnet/widgets/HighlightableText.dart';
+import 'package:lehnfeldnet/widgets/highlightable_text.dart';
 
 class Headline extends StatefulWidget {
   final String text;
