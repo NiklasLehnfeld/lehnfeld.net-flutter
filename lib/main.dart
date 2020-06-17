@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               flex: 10,
               child: SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 32),
+                  padding: const EdgeInsets.symmetric(vertical: 32,),
                   child: HomeWidget(),
                 ),
               ),

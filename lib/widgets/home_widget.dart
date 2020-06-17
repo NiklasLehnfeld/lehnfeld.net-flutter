@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lehnfeldnet/widgets/contact_me_widget.dart';
 import 'package:lehnfeldnet/widgets/hightlightable.dart';
+import 'package:lehnfeldnet/widgets/logo.dart';
 import 'package:lehnfeldnet/widgets/skills_widget.dart';
 import 'package:lehnfeldnet/widgets/social_media_widget.dart';
 
@@ -15,11 +16,7 @@ class _HomeWidgetState extends State<HomeWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Highlightable(
-          child: AssetImage("images/logo.png"),
-          width: 250,
-          height: 250,
-        ),    
+        Logo(), 
         SizedBox(
           height: 70,
         ),
