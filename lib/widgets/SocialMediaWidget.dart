@@ -4,6 +4,7 @@ import 'package:lehnfeldnet/widgets/Highlightable.dart';
 import 'package:lehnfeldnet/widgets/HighlightableText.dart';
 
 import 'package:lehnfeldnet/widgets/HighlightableText.dart';
+import 'package:lehnfeldnet/widgets/headline.dart';
 
 class SocialMediaWidget extends StatelessWidget {
 
@@ -17,12 +18,12 @@ class SocialMediaWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        HighlightableText(
+        Headline(
           "Follow me on",
           style: TextStyle(fontSize: 30),
         ),
         SizedBox(
-          height: 20,
+          height: 50,
         ),
         Container(
           width: deviceWidth < maxWidth ? deviceWidth : maxWidth,

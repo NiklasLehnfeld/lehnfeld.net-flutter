@@ -11,23 +11,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Niklas Lehnfeld | Software Engineer',
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+      title: 'Niklas Lehnfeld | Software Engineer',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Stack(
+          alignment: Alignment.topCenter,
           children: [
+            Expanded(
+              flex: 10,
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 32),
+                  child: HomeWidget(),
+                ),
+              ),
+            ),
             Expanded(
               child: BuiltWithFlutterBanner(),
               flex: 1,
             ),
-            Expanded(
-                flex: 10,
-                child: SingleChildScrollView(
-                  child: HomeWidget(),
-                ))
           ],
-        )));
+        ),
+      ),
+    );
   }
 }

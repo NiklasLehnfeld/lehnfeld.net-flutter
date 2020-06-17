@@ -13,15 +13,17 @@ class _BuiltWithFlutterBannerState extends State<BuiltWithFlutterBanner> {
   Color fontColor = Colors.white;
   Color bannerColor = Colors.blue;
 
+  static const WIDTH = 300.0;
+
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Transform.translate(
-          offset: Offset.fromDirection(0, 40),
+          offset: Offset.fromDirection(0, WIDTH / 4),
           child: Transform.translate(
-            offset: Offset.fromDirection(180, 0),
+            offset: Offset.fromDirection(0, 0),
             child: Transform.rotate(
               angle: math.pi / 4.5,
               child: MouseRegion(
@@ -32,14 +34,14 @@ class _BuiltWithFlutterBannerState extends State<BuiltWithFlutterBanner> {
                   child: Card(
                     elevation: 10,
                     child: Container(
-                        width: 200,
+                        width: WIDTH,
                         color: bannerColor,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             SizedBox(
-                              width: 40,
+                              width: 70,
                             ),
                             Text(
                               "Built with",
