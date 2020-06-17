@@ -17,19 +17,13 @@ class MyApp extends StatelessWidget {
         body: Stack(
           alignment: Alignment.topCenter,
           children: [
-            Expanded(
-              flex: 10,
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32,),
-                  child: HomeWidget(),
-                ),
+            SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 32,),
+                child: HomeWidget(),
               ),
             ),
-            Expanded(
-              child: BuiltWithFlutterBanner(),
-              flex: 1,
-            ),
+            BuiltWithFlutterBanner(),
           ],
         ),
       ),

@@ -36,7 +36,7 @@ class SkillsWidget extends StatelessWidget {
                         icon: FontAwesomeIcons.rocket,
                       ),
                       ProgressBar(
-                        value: 30,
+                        value: 50,
                         strokeColor: Colors.purple,
                         text: "Python",
                         icon: FontAwesomeIcons.python,
@@ -50,13 +50,13 @@ class SkillsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ProgressBar(
-                        value: 30,
+                        value: 50,
                         strokeColor: Colors.orange,
                         text: "Swift",
                         icon: FontAwesomeIcons.apple,
                       ),
                       ProgressBar(
-                        value: 50,
+                        value: 60,
                         strokeColor: Colors.lime,
                         text: "SQL",
                         icon: FontAwesomeIcons.database,
