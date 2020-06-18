@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lehnfeldnet/widgets/companies_widget.dart';
 import 'package:lehnfeldnet/widgets/contact_me_widget.dart';
 import 'package:lehnfeldnet/widgets/hightlightable.dart';
 import 'package:lehnfeldnet/widgets/logo.dart';
@@ -20,6 +21,8 @@ class _HomeWidgetState extends State<HomeWidget> {
         SizedBox(
           height: 70,
         ),
+        CompaniesWidget(),
+        SizedBox(height: 70,),
         SkillsWidget(),
         SizedBox(
           height: 70,

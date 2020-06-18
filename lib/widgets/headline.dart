@@ -20,7 +20,7 @@ class _HeadlineState extends State<Headline> {
       alignment: Alignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 48.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: MouseRegion(
             onHover: (e) => onDividerHover(),
             onExit: (e) => onDividerExit(),

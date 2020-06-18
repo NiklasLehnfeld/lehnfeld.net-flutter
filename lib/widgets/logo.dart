@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lehnfeldnet/widgets/hightlightable.dart';
 import 'dart:math' as math;
@@ -17,7 +18,10 @@ class _LogoState extends State<Logo> with SingleTickerProviderStateMixin {
     animationController = AnimationController(
       duration: const Duration(milliseconds: 30000), 
       vsync: this
-    )..repeat();
+    );
+    if (kReleaseMode) {
+      animationController.repeat();
+    }
     super.initState();
   }
 
