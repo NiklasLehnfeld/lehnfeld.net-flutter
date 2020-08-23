@@ -13,7 +13,7 @@ class SkillsWidget extends StatelessWidget {
           Headline(
             "My skills include",
             style: TextStyle(fontSize: 30),
-          ),          
+          ),
           SizedBox(
             height: 50,
           ),
@@ -30,13 +30,13 @@ class SkillsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ProgressBar(
-                        value: 90,
+                        value: 100,
                         strokeColor: Colors.green,
                         text: "Flutter",
                         icon: FontAwesomeIcons.rocket,
                       ),
                       ProgressBar(
-                        value: 50,
+                        value: 100,
                         strokeColor: Colors.purple,
                         text: "Python",
                         icon: FontAwesomeIcons.python,
@@ -50,13 +50,13 @@ class SkillsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ProgressBar(
-                        value: 50,
+                        value: 100,
                         strokeColor: Colors.orange,
                         text: "Swift",
                         icon: FontAwesomeIcons.apple,
                       ),
                       ProgressBar(
-                        value: 60,
+                        value: 100,
                         strokeColor: Colors.lime,
                         text: "SQL",
                         icon: FontAwesomeIcons.database,
@@ -70,13 +70,13 @@ class SkillsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ProgressBar(
-                        value: 90,
+                        value: 100,
                         strokeColor: Colors.cyan,
                         text: "Kotlin",
                         icon: FontAwesomeIcons.android,
                       ),
                       ProgressBar(
-                        value: 90,
+                        value: 100,
                         strokeColor: Colors.red,
                         text: "Java",
                         icon: FontAwesomeIcons.java,
